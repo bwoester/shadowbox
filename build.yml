@@ -4,16 +4,16 @@
 adapter: base
 
 # An array of any language code in source/languages
-languages: [en, de-DE]
+languages: [cs, de-DE, en, es, fr, it, nl]
 
 # An array of names of players found in source/players
-players: [flv, html, iframe, img, qt, swf, wmp]
+players: [img]
 
 # YES to include support for CSS selectors, NO to decline
 css_support: YES
 
 # YES to compress the code, NO to use the source code
-compress: NO
+compress: YES
 
 # The directory to output the build to
 target: build
