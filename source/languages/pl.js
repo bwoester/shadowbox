@@ -2,7 +2,7 @@
  * The Polish language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["pl"] = {
     code:       'pl',
     of:         'z',
     loading:    'wczytywanie',

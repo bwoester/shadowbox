@@ -2,7 +2,7 @@
  * The Galician language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["gl"] = {
     code:       'gl',
     of:         'de',
     loading:    'cargando',

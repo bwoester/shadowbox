@@ -2,7 +2,7 @@
  * The Hebrew language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["he"] = {
     code:       'he',
     of:         'מתוך',
     loading:    'טוען',

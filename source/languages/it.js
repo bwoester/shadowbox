@@ -2,7 +2,7 @@
  * The Italian language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["it"] = {
     code:       'it',
     of:         'di',
     loading:    'in caricamento',

@@ -2,7 +2,7 @@
  * The Indonesian language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["id"] = {
     code:       'id',
     of:         'dari',
     loading:    'pengisian',

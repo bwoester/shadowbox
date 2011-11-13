@@ -2,7 +2,7 @@
  * The Hungarian language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["hu"] = {
     code:       'hu',
     of:         '/',
     loading:    'Betöltés',

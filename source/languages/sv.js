@@ -2,7 +2,7 @@
  * The Swedish language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["sv"] = {
     code:       'sv',
     of:         'av',
     loading:    'laddar',

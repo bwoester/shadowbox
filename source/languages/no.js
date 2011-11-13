@@ -2,7 +2,7 @@
  * The Norwegian language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["no"] = {
     code:       'no',
     of:         'av',
     loading:    'laster',

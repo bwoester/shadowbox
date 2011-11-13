@@ -2,7 +2,7 @@
  * The Finnish language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["fi"] = {
     code:       'fi',
     of:         '/',
     loading:    'ladataan',

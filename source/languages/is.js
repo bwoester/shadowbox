@@ -2,7 +2,7 @@
  * The Icelandic language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["is"] = {
     code:       'is',
     of:         'af',
     loading:    'hleð',

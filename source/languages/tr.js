@@ -2,7 +2,7 @@
  * The Turkish language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["tr"] = {
     code:       'tr',
     of:         '/',
     loading:    'yükleniyor',

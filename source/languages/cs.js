@@ -2,7 +2,7 @@
  * The Czech language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["cs"] = {
     code:       'cs',
     of:         'z(e)',
     loading:    'nahrávám',

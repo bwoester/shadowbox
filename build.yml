@@ -3,8 +3,8 @@
 # May be the name of any adapter in source/adapters
 adapter: base
 
-# May be any language code in source/languages
-language: en
+# An array of any language code in source/languages
+languages: [en, de-DE]
 
 # An array of names of players found in source/players
 players: [flv, html, iframe, img, qt, swf, wmp]

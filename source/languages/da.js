@@ -2,7 +2,7 @@
  * The Danish language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["da"] = {
     code:       "da",
     of:         "af",
     loading:    "loader",

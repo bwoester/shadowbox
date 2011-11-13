@@ -2,7 +2,7 @@
  * The Japanese language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["ja"] = {
     code: 'ja',
     of: '/',
     loading: '読込中',

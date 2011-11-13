@@ -19,13 +19,13 @@ module Shadowbox
   end
 
   @default_adapter = 'base'
-  @default_language = 'en'
+  @default_languages = 'en'
   @default_players = @available_players.dup
 
   class << self
     attr_reader :source_dir, :compiler, :current_version
     attr_reader :available_adapters, :available_languages, :available_players
-    attr_reader :default_adapter, :default_language, :default_players
+    attr_reader :default_adapter, :default_languages, :default_players
 
     def valid_adapter?(adapter)
       @available_adapters.include?(adapter)
@@ -53,7 +53,7 @@ module Shadowbox
       dest = File.join(@dir, file)
       dest_dir = File.dirname(dest)
       mkdir_p(dest_dir) unless File.directory?(dest_dir)
-      File.open(dest, 'w') do |f|
+      File.open(dest, 'wb') do |f|
         f.write(contents)
       end
     end
@@ -62,7 +62,7 @@ module Shadowbox
   class Builder
     DEFAULTS = {
       :adapter      => Shadowbox.default_adapter,
-      :language     => Shadowbox.default_language,
+      :languages    => Shadowbox.default_languages,
       :players      => Shadowbox.default_players,
       :css_support  => true,
       :compress     => false
@@ -87,9 +87,11 @@ module Shadowbox
 
     def validate!
       raise ArgumentError, "Unknown adapter: #{adapter}" unless Shadowbox.valid_adapter?(adapter)
-      raise ArgumentError, "Unknown language: #{language}" unless Shadowbox.valid_language?(language)
       players.each do |player|
         raise ArgumentError, "Unknown player: #{player}" unless Shadowbox.valid_player?(player)
+      end
+      languages.each do |language|
+        raise ArgumentError, "Unknown language: #{language}" unless Shadowbox.valid_language?(language)
       end
     end
 
@@ -119,7 +121,7 @@ module Shadowbox
 
       # Copy all other resources.
       resource_files.each do |file|
-        target[File.basename(file)] = File.read(file)
+        target[File.basename(file)] = open(file, "rb") {|io| io.read }
       end
     end
 
@@ -153,7 +155,7 @@ module Shadowbox
       files << 'cache'
       files << 'find' if css_support
       files << 'flash' if requires_flash?
-      files << File.join('languages', language)
+      files += languages.map {|l| File.join('languages', l) }
       files += players.map {|p| File.join('players', p) }
       files << 'skin'
       files << 'outro'

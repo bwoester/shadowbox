@@ -2,7 +2,7 @@
  * The Russian language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["ru"] = {
     code:       'ru',
     of:         'из',
     loading:    'загрузка',

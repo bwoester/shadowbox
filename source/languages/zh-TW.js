@@ -2,7 +2,7 @@
  * The Chinese (Traditional) language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["zh-TW"] = {
     code:       'zh-TW',
     of:         '的',
     loading:    '讀取中',

@@ -2,7 +2,7 @@
  * The Burmese language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["my"] = {
     code:       'my',
     of:         '',
     loading:    'memuat turun',

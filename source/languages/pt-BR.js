@@ -2,7 +2,7 @@
  * The Brazilian Portuguese language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["pt-BR"] = {
     code:       'pt-BR',
     of:         'de',
     loading:    'carregando',

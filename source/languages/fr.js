@@ -2,7 +2,7 @@
  * The French language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["fr"] = {
     code:       'fr',
     of:         'de',
     loading:    'chargement',

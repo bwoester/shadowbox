@@ -2,7 +2,7 @@
  * The Romanian language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["ro"] = {
     code:       'ro',
     of:         'din',
     loading:    'se incarca',

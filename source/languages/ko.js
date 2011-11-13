@@ -2,7 +2,7 @@
  * The Korean language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["ko"] = {
     code:       'ko',
     of:         '중',
     loading:    '로딩 중',

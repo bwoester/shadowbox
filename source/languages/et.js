@@ -2,7 +2,7 @@
  * The Estonian language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["et"] = {
     code:       'et',
     of:         '/',
     loading:    'laen',

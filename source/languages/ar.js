@@ -2,7 +2,7 @@
  * The Arabic language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["ar"] = {
     code:       'ar',
     of:         'من',
     loading:    'جار التحميل',

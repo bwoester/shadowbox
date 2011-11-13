@@ -2,7 +2,7 @@
  * The Slovak language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["sk"] = {
     code:       'sk',
     of:         'z',
     loading:    'Načítava',

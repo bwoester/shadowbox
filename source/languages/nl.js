@@ -2,7 +2,7 @@
  * The Dutch language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["nl"] = {
     code:       'nl',
     of:         'van',
     loading:    'laden',

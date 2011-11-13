@@ -2,7 +2,7 @@
  * The Catalan language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["ca"] = {
     code:       'ca',
     of:         'de',
     loading:    'carregant',

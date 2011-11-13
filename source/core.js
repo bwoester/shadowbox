@@ -91,6 +91,22 @@ slideStart,
 slideTimer;
 
 /**
+ * The loaded language.
+ *
+ * @type    {Object}
+ * @private
+ */
+S.lang = null;
+
+/**
+ * The translations.
+ *
+ * @type    {Object}
+ * @private
+ */
+S.translations = {};
+
+/**
  * The index of the current object in the gallery array.
  *
  * @type    {Number}
@@ -332,7 +348,14 @@ S.options = {
      *
      * @type    {Number}
      */
-    viewportPadding: 20
+    viewportPadding: 20,
+	
+    /**
+     * The language of the GUI to use.
+     *
+     * @type    {String}
+     */
+	lang: 'en',
 
 };
 
@@ -418,6 +441,19 @@ S.init = function(options, callback) {
     if (options)
         apply(S.options, options);
 
+    // if a language identifier is specified in the options, use it to set
+	// the related existing translations object.
+	if (typeof S.options.lang == "string")
+	{
+	  S.lang = S.translations[ S.options.lang ];
+	}
+	// if no language identifier is specified, consider a custom translation
+	// has been specified and use it as-is.
+	else
+	{
+      S.lang = S.options.lang;
+	}
+		
     if (!S.path) {
         // determine script path automatically
         var path, scripts = document.getElementsByTagName("script");

@@ -2,7 +2,7 @@
  * The Spanish language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["es"] = {
     code:       'es',
     of:         'de',
     loading:    'cargando',

@@ -2,7 +2,7 @@
  * The German language translation for Shadowbox.
  */
 
-S.lang = {
+S.translations["de"] = {
     code:       'de',
     of:         'von',
     loading:    'ladend',
